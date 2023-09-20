@@ -1,0 +1,7 @@
+.quotes {
+  flex-direction: column;
+}
+.quote {
+  background-color: var(--clr-primary-800);
+  border-radius: .5em;
+}

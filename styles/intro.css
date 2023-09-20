@@ -1,0 +1,9 @@
+.intro h1 {
+  margin: 0 auto;
+  max-width: 12ch;
+  color: var(--clr-primary-800);
+}
+.intro p {
+  margin-top: 1.5em;
+  color: var(--clr-neutral-400);
+}
