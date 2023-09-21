@@ -4,6 +4,15 @@
   color: var(--clr-primary-800);
 }
 .intro p {
-  margin-top: 1.5em;
+  margin: 0 auto;
+  margin-top: 1em; 
+  max-width: 25rem;
   color: var(--clr-neutral-400);
+}
+
+/* Media Queries */
+@media (min-width: 50rem) {
+  .intro h1, .intro p {
+    margin-left: 0;
+  }
 }

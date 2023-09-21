@@ -1,7 +1,50 @@
 .quotes {
-  flex-direction: column;
+  --spacer: 2rem;
+  color: var(--clr-neutral-200);
+  text-align: left;
 }
 .quote {
+  max-width: 25rem;
   background-color: var(--clr-primary-800);
+  padding: var(--spacer);
+  margin: 0 auto;
   border-radius: .5em;
+  overflow: hidden;
+}
+.quote > p {
+  font-weight: 400;
+}
+
+.split {
+  align-items: center;
+  gap: var(--spacer);
+  margin-bottom: var(--spacer);
+}
+.split img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: var(--fw-bold);
+}
+.status {
+  color: var(--clr-secondary-500);
+}
+
+/* media queries */
+@media (min-width: 50rem) {
+  .quotes {
+    gap: 1.25rem;
+  }
+  .quotes {
+    grid-column: span 2;
+    grid-auto-flow: column;
+  }
+  .quote:nth-child(2) {
+    transform: translateY(2rem);
+  }
+  .quote:nth-child(3) {
+    transform: translateY(4rem);
+  }
 }

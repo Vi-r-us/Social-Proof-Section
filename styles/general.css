@@ -22,12 +22,23 @@
 
 /* General Styling */
 body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+
   font-family: var(--ff-ls);
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   font-weight: var(--fw-regular);
 
   padding: 4em 1em;
   text-align: center;
+
+  background-image: 
+    url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-moblie.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: max(50%, 400px);
 }
 li {
   list-style-type: none;
@@ -35,7 +46,7 @@ li {
 h1 {
   font-size: var(--fs-900);
   font-weight: var(--fw-bold);
-  line-height: .75;
+  line-height: .8;
 }
 p {
   font-size: var(--fs-500);
@@ -46,9 +57,7 @@ p {
 /* Utility Classes */
 .grid {
   display: grid;
-  justify-items: center;
-  align-items: center;
-  place-items: center;
+  gap: 1em;
 }
 .flex {
   display: flex;
@@ -57,9 +66,10 @@ p {
 
 /* Other CSS */
 .container {
+  margin: 0 auto;
+  max-width: 79em;
   gap: 2em;
 }
-
 .attribution {
   margin-top: 1em;
   font-size: 11px;
@@ -68,4 +78,21 @@ p {
 .attribution a {
   text-decoration: none;
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (min-width: 50rem) {
+  body {
+    background-image: 
+      url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+  }
+  .container {
+    gap: 3rem;
+    grid-template-columns: 1fr 1.25fr;
+    text-align: left;
+  }
+  .attribution {
+    margin-top: 3rem;
+  }
 }
