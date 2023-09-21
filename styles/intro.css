@@ -10,9 +10,16 @@
   color: var(--clr-neutral-400);
 }
 
+.intro {
+  animation: slide-in-left 1s;
+}
+
 /* Media Queries */
 @media (min-width: 50rem) {
   .intro h1, .intro p {
     margin-left: 0;
+  }
+  .intro {
+    animation: slide-in-left 1s;
   }
 }

@@ -23,9 +23,14 @@
   background-repeat: space;
 }
 
+.reviews {
+  animation: slide-in-left 1s;
+}
+
 /* media queries */
 @media (min-width: 50rem) {
   .reviews {
+    animation: slide-in-right 1s;
     margin: auto 0;
   }
   .review {

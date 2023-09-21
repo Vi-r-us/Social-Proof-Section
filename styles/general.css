@@ -80,12 +80,16 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
+.attribution {
+  animation: slide-in-left 1s;
+}
+
 /* Media Queries */
 @media (min-width: 50rem) {
   body {
     background-image: 
-      url(../images/bg-pattern-top-desktop.svg),
-      url(../images/bg-pattern-bottom-desktop.svg);
+    url(../images/bg-pattern-top-desktop.svg),
+    url(../images/bg-pattern-bottom-desktop.svg);
   }
   .container {
     gap: 3rem;
@@ -94,5 +98,6 @@ p {
   }
   .attribution {
     margin-top: 3rem;
+    animation: slide-in-down 1s;
   }
 }

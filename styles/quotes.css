@@ -32,14 +32,17 @@
   color: var(--clr-secondary-500);
 }
 
+.quotes {
+  animation: slide-in-left 1s;
+}
+
 /* media queries */
 @media (min-width: 50rem) {
   .quotes {
     gap: 1.25rem;
-  }
-  .quotes {
     grid-column: span 2;
     grid-auto-flow: column;
+    animation: slide-in-down 1s;
   }
   .quote:nth-child(2) {
     transform: translateY(2rem);
